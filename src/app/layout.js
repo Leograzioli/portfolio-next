@@ -1,7 +1,8 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import '../style/globals.css'
+import { Noto_Serif_TC } from 'next/font/google'
+import Header from '@/components/Header'
 
-const inter = Inter({ subsets: ['latin'] })
+const noto_Serif_TC = Noto_Serif_TC({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${noto_Serif_TC.className} bg-primary dark:bg-secondary`}>
+        <Header />
+        <main className='w-full h-screen /mt-[100px]'>
+
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
