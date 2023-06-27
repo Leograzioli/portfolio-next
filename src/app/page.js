@@ -19,7 +19,7 @@ export default function Home() {
         <div className="flex h-full justify-center items-center">
           <div className="w-2/3 sm:pt-28">
 
-            <h2 className="text-2xl text-center font-semibold uppercase"> i am leonardo</h2>
+            <h2 className="text-2xl text-center font-semibold uppercase text-secondary/50 sm:text-secondary"> i am leonardo</h2>
             <p className="mt-8 leading-8 text-lg ">The passion for technology and video games has driven me to enter the world of web development and study to become a Web Developer. Now more than ever, I dedicate my time to studying new technologies and deepening my previous knowledge.</p>
 
             <div className="text-center mt-12 w-full sm:2/3 md:w-1/3 mx-auto border-b border-secondary pb-2">
@@ -40,10 +40,10 @@ export default function Home() {
       </section>
 
       {/* skills section */}
-      <section id='skills' className="bg-white w-full h-[calc(100vh-196px)] flex flex-col justify-end pb-16 relative">
+      <section id='skills' className="bg-white w-full h-[calc(100vh-196px)] flex flex-col justify-center pt-40 xl:pt-80 relative">
 
         <div className="ms-container">
-          <div className="flex justify-center flex-wrap gap-2 text-4xl sm:mt-8 pb-4">
+          <div className="flex justify-center flex-wrap gap-6 text-4xl /sm:mt-8 pb-16">
 
             <SkillIcon title={'Html'}>
               <SiHtml5 className="text-[#e44d26] bg-white p-0.5 rounded" />
@@ -94,22 +94,22 @@ export default function Home() {
       </section>
 
       {/* section formation*/}
-      <section id='formation' className='ms-container min-h-[calc(100vh-96px)] h-full  relative'>
+      <section id='formation' className='ms-container relative'>
 
         <div className="flex justify-center">
           <img className="absolute top-0 w-2/3 -z-10" src="/static/formation.png" alt="" />
         </div>
 
-        <div className="flex flex-col gap-y-8 h-full justify-center pt-44">
+        <div className="pt-44 sm:pt-96 pb-16 min-h-[calc(100vh-96px)] space-y-8">
           <div className="">
-            <h2 className="text-2xl font-semibold uppercase"> Boolean - <span className='text-sm'>FULL STACK WEB DEVELOPER TRAINEE</span></h2>
+            <h2 className="text-2xl font-semibold uppercase text-secondary/50 sm:text-secondary"> Boolean - <span className='text-sm'>FULL STACK WEB DEVELOPER TRAINEE</span></h2>
             <p className="mt-4 sm:leading-8 text-normal sm:text-lg">
               Experience of 700 hours, achieving the goal of developing the mindset of a complete programmer, developing problem-solving skills, breaking down complex problems into more manageable components, and analyzing requirements to create efficient solutions.
               Particular emphasis was placed on implementing processes inspired by well-known web apps (such as Netflix, WhatsApp Web, etc.) developed independently. The experience culminated in the collaborative creation of a website, inspired by a social media platform for doctors, working with incomplete briefs in order to fulfill the requests while also bringing forth creative and functional solutions and proposals.
             </p>
           </div>
           <div className="">
-            <h2 className="text-2xl font-semibold uppercase"> the net ninja - <span className='text-sm'>REACT.JS - BUILD WEB APPS WITH REACT</span></h2>
+            <h2 className="text-2xl font-semibold uppercase text-secondary/50 sm:text-secondary"> the net ninja - <span className='text-sm'>REACT.JS - BUILD WEB APPS WITH REACT</span></h2>
             <p className="mt-4 sm:leading-8 text-normal sm:text-lg">
               Learn React from the ground up to make dynamic websites (includes Context, Hooks, Reducers, Routing, Auth, Databases)
             </p>
