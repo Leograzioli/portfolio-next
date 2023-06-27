@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from "next/link";
 
 export default function Header() {
@@ -11,11 +11,11 @@ export default function Header() {
 
         // Get the target section's offset top position
         const section = document.querySelector(event.target.getAttribute('href'));
-        setCurrentRoute(section.id)
-        console.log(section.id);
+
         let sectionTop = ''
-        if(section.id === 'skills') {
-             sectionTop = section.offsetTop - 196;
+
+        if (section.id === 'skills') {
+            sectionTop = section.offsetTop - 196;
         } else {
             sectionTop = section.offsetTop
         }
@@ -26,6 +26,29 @@ export default function Header() {
             behavior: 'smooth'
         });
     }
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll('section');
+            let current = null;
+
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    current = section;
+                }
+            });
+
+            setCurrentRoute(current.id);
+
+
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
 
     return (

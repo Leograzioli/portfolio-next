@@ -18,6 +18,7 @@ export default function Home() {
 
         <div className="flex h-full justify-center items-center">
           <div className="w-2/3 sm:pt-28">
+
             <h2 className="text-2xl text-center font-semibold uppercase"> i am leonardo</h2>
             <p className="mt-8 leading-8 text-lg ">The passion for technology and video games has driven me to enter the world of web development and study to become a Web Developer. Now more than ever, I dedicate my time to studying new technologies and deepening my previous knowledge.</p>
 
@@ -27,9 +28,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div className='absolute bg-white h-[200px] md:h-[300px] lg:h-[500px] mx-[8%] bottom-[-100px] md:bottom-[-200px] lg:bottom-[-400px] left-0 right-0'>
 
           <div className="flex justify-center ">
+
             <img className="w-full max-h-[500px] sm:w-2/3 z-10" src="/static/skills.png" alt="" />
           </div>
         </div>
@@ -37,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* skills section */}
-      <section id='skills' className="bg-white w-full h-screen flex flex-col justify-center relative">
+      <section id='skills' className="bg-white w-full h-[calc(100vh-196px)] flex flex-col justify-end pb-16 relative">
 
         <div className="ms-container">
           <div className="flex justify-center flex-wrap gap-2 text-4xl sm:mt-8 pb-4">
@@ -112,9 +115,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-
-
       </section>
+
+
     </>
   )
 }
