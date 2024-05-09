@@ -110,7 +110,7 @@ export default function Home() {
           </div>
           <div className="">
             <h2 className="text-2xl font-semibold uppercase text-secondary/50 sm:text-secondary"> the net ninja - <span className='text-sm'>REACT.JS - BUILD WEB APPS WITH REACT</span></h2>
-            <p className="mt-4 sm:leading-8 text-normal sm:text-lg">
+            <p className="mt-4 sm:leading-8 text-normal sm:text-lg ">
               Learn React from the ground up to make dynamic websites (includes Context, Hooks, Reducers, Routing, Auth, Databases)
             </p>
           </div>
